@@ -1,0 +1,8 @@
+<div class="Main">
+    <!--<div class="Welcome">Instamynd</div>-->
+    <div class="History">
+        <ul>
+            <li (click)="MouseClick($event)" class="ChatItems" *ngFor="let chat of Chats"><span style="padding:1.25%;background-color: dimgray;font-size: 24px" *ngIf="chat.newmsg>0">{{chat.newmsg}}</span><span style="padding:1.25%;">{{chat.by}}</span><span style="padding:1.25%">{{chat.type}}</span></li>
+        </ul>
+    </div>
+</div>
